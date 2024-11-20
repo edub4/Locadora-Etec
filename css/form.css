@@ -1,0 +1,47 @@
+
+.form{
+    margin: 20px auto;
+    width: 1000px;
+    flex-wrap: wrap;
+    justify-content:start;
+    border-radius: 5px; width: 90%;
+    height: 700px;
+    background-color: rgb(226, 226, 226);
+    padding: 20px;
+    box-shadow: 0px 1px 2px rgba(87, 87, 87, 0.331);
+    border: solid;
+}
+.labelLinha{
+    background-color: rgb(226, 226, 226);
+}
+.formInput{
+    margin: 12px;
+    width: 400px;
+}
+.formInput input{
+    background-color: rgb(226, 226, 226);
+    width: 100%;
+    padding: 5px 20px 5px 20px;
+    font-size:larger;
+}
+main{
+    margin: auto;
+    width: 1000px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+main H1{
+    margin: 0 0 0 50px;
+}
+.btnVerde{ 
+    background-color: #6a0dad;
+    color:rgb(243, 243, 243);
+    border-radius: 5px;
+}
+input:focus{
+    background-color: rgb(219, 219, 219);
+}
