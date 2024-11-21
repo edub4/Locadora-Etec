@@ -6,10 +6,16 @@
     margin: 0;
     font-family: poppins;
 }
-
 .header{
     background-color: #6a0dad;
     margin-bottom: 20px;
+}
+.imgFundo{
+    background-image: url(../img/lovetec/carroBackgrund.jpg);
+    background-position-x: center;
+    background-size: 100%;
+    background-position-y: 70%;
+    padding-bottom: 100px;
 }
 .container {
     margin: 0 auto;
@@ -22,7 +28,7 @@
     font-weight: 600;
     height: 80px;
 }
-.container a,li {
+.header a,li {
     text-decoration: none;
     list-style-type: none;
     color: #ffffff;
@@ -68,10 +74,17 @@
 #logo{
     width: 120px;
 }
+.alinhar{
+    padding: 20px;
+    margin-top: 20px;
+    height: 100%;
+    width: 65%;
+    background-color: #ffffff;
+    border-radius: 5px;
 
+}
 
 form{
-    margin-top: 50px;
     width: 100%;
     justify-content: space-evenly;
     display:grid;
@@ -105,6 +118,67 @@ form{
 }
 .btnVerde{
     width: 300px;
-    box-shadow: 0px 1px 2px rgba(87, 87, 87, 0.331);
+    box-shadow: 0px 1px 2px rgba(156, 156, 156, 0.39);
     padding: 10px 20px 10px 20px;
+    background-color: #007e3b;
+    border-radius: 5px;
+    color: #ffffff;
+}
+.carros{
+    margin: 100px auto;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cards{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.card{
+    background-color: #ffffff;
+    padding: 30px 20px 30px 20px;
+    width: 280px;
+    height: 400px;
+    border: #999999 solid 1.5px;
+    box-shadow: 0 1px 2px rgba(156, 156, 156, 0.514);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+    margin: 10px;
+}
+.cardHead{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardHead h2{
+    color: #6a0dad;
+}
+.cardBody{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cardBody a{
+    color: #6a0dad;
+    font-weight: 500;
+}
+.btnRoxo{
+    background-color: #6A0DAD;
+    color: white;
+    font-weight: 500;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(156, 156, 156, 0.466);
 }

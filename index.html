@@ -10,66 +10,123 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container header">
-            <div class="logo">
-                <img src="img/lovetec/LogoNome.png" alt="logo" id="logo">
-            </div>
-            <div class="pages">
-                <ul>
-                    <li><a href="#">CARROS</a></li>
-                    <li><a href="#">AGÊNCIAS</a></li>
-                    <li><a href="#">OFERTAS</a></li>
-                    <li><a href="#">PLANOS</a></li>
-                    <li><a href="#">DÚVIDAS</a></li>
-                    <li><a href="#">PARA EMPRESAS</a></li>
-                </ul>
-            </div>
-            <div class="log">
-                <div class="reserva">
-                    <a href="#"><img src="img/icone/directions_car_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">MINHAS RESERVAS</a>
+    <div class="imgFundo">
+        <header>
+            <div class="container header">
+                <div class="logo">
+                    <img src="img/lovetec/LogoNome.png" alt="logo" id="logo">
                 </div>
-                <div class="inOut">
-                    <img src="img/icone/person_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                    <a href="html/logar.html">LOGIN </a>
-                    <p>|</p>
-                    <a href="html/cadastrar.html">CADASTRAR</a>
+                <div class="pages">
+                    <ul>
+                        <li><a href="#">CARROS</a></li>
+                        <li><a href="#">AGÊNCIAS</a></li>
+                        <li><a href="#">OFERTAS</a></li>
+                        <li><a href="#">PLANOS</a></li>
+                        <li><a href="#">DÚVIDAS</a></li>
+                        <li><a href="#">PARA EMPRESAS</a></li>
+                    </ul>
+                </div>
+                <div class="log">
+                    <div class="reserva">
+                        <a href="#"><img src="img/icone/directions_car_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">MINHAS RESERVAS</a>
+                    </div>
+                    <div class="inOut">
+                        <img src="img/icone/person_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        <a href="html/logar.html">LOGIN </a>
+                        <p>|</p>
+                        <a href="html/cadastrar.html">CADASTRAR</a>
+                    </div>
                 </div>
             </div>
+        </header>
+            <div class="container alinhar">
+                <form action="#">
+                    <div class="formInput">
+                        <input type="text" name="localRetirada" id="localRetirada" >
+                        <div class="labelLinha">Digite o local de retirada</div>
+                    </div>
+                    <div class="formInput">
+                        <input type="datetime" name="dataIda" id="dataIda" >
+                        <div class="labelLinha">Data da retirada</div>
+                    </div>
+                    <div class="formInput">
+                        <input type="text" name="horaIda" id="horaIda" >
+                        <div class="labelLinha">Hora da devolução</div>
+                    </div>
+
+                    
+
+                    <div class="formInput">
+                        <input type="text" name="localDevolucao" id="localDevolucao" >
+                        <div class="labelLinha">Digite o local de devolução</div>
+                    </div>
+                    <div class="formInput">
+                        <input type="datetime" name="dataDevolucao" id="dataDevolucao" >
+                        <div class="labelLinha">Data da devolução</div>
+                    </div>
+                    <div class="formInput">
+                        <input type="text" name="horaDevolucao" id="horaDevolucao" >
+                        <div class="labelLinha">Hora da devolução</div>
+                    </div>
+                </form>
+                <button type="submit" class="btnVerde">CONTINUAR</button>
+            </div>
+    </div>
+    <main class="container carros">
+        <div class="head">
+            <h1>
+                Alugue Um Carro Para Sua Proxima Viagem
+            </h1>
         </div>
-    </header>
-        <div class="container alinhar">
-            <form action="#">
-                <div class="formInput">
-                    <input type="text" name="localRetirada" id="localRetirada" >
-                    <div class="labelLinha">Digite o local de retirada</div>
+        <div class="cards">
+            <div class="card">
+                <div class="cardHead">
+                    <h2>corro1 1.0, ou similar</h2>
+                    <h3>Grupo B- Com Ar</h3>
                 </div>
-                <div class="formInput">
-                    <input type="datetime" name="dataIda" id="dataIda" >
-                    <div class="labelLinha">Data da retirada</div>
+                <div class="cardBody">
+                    <img src="/img/carros/carro1.jpeg" alt="carro1">
+                    <button type="submit" class="btnRoxo">RESERVE AGORA</button>
+                    <a href="#">Mais Detalhes</a>
                 </div>
-                <div class="formInput">
-                    <input type="text" name="horaIda" id="horaIda" >
-                    <div class="labelLinha">Hora da devolução</div>
-                </div>
-
-                
-
-                <div class="formInput">
-                    <input type="text" name="localDevolucao" id="localDevolucao" >
-                    <div class="labelLinha">Digite o local de devolução</div>
-                </div>
-                <div class="formInput">
-                    <input type="datetime" name="dataDevolucao" id="dataDevolucao" >
-                    <div class="labelLinha">Data da devolução</div>
-                </div>
-                <div class="formInput">
-                    <input type="text" name="horaDevolucao" id="horaDevolucao" >
-                    <div class="labelLinha">Hora da devolução</div>
-                </div>
-            </form>
-            <button type="submit" class="btnVerde">CONTINUAR</button>
+            </div>
             
+            <div class="card">
+                <div class="cardHead">
+                    <h2>corro1 1.0, ou similar</h2>
+                    <h3>Grupo B- Com Ar</h3>
+                </div>
+                <div class="cardBody">
+                    <img src="/img/carros/carro1.jpeg" alt="carro1">
+                    <button type="submit" class="btnRoxo">RESERVE AGORA</button>
+                    <a href="#">Mais Detalhes</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="cardHead">
+                    <h2>corro1 1.0, ou similar</h2>
+                    <h3>Grupo B- Com Ar</h3>
+                </div>
+                <div class="cardBody">
+                    <img src="/img/carros/carro1.jpeg" alt="carro1">
+                    <button type="submit" class="btnRoxo">RESERVE AGORA</button>
+                    <a href="#">Mais Detalhes</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="cardHead">
+                    <h2>corro1 1.0, ou similar</h2>
+                    <h3>Grupo B- Com Ar</h3>
+                </div>
+                <div class="cardBody">
+                    <img src="/img/carros/carro1.jpeg" alt="carro1">
+                    <button type="submit" class="btnRoxo">RESERVE AGORA</button>
+                    <a href="#">Mais Detalhes</a>
+                </div>
+            </div>
         </div>
+    </main>
 </body>
 </html>
