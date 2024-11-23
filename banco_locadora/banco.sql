@@ -12,9 +12,10 @@ CREATE TABLE `cliente` (
     `codigo_cliente` int auto_increment PRIMARY KEY,
     `nome_cliente` varchar (50) not null,
     `data_nascimento_cliente` date,
-    `numero_cnh_cliente` varchar (11) not null,
+    `numero_cnh_cliente` varchar (15) not null,
     `telefone_cliente` varchar (13) not null,
-    `cpf_cliente` varchar (15) not null,
+    `cpf_cliente` varchar (11) not null,
+    `senha_cliente` VARCHAR (10) NOT NULL,
     UNIQUE (`numero_cnh_cliente`, `cpf_cliente`)
 );
 
