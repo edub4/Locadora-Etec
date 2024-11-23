@@ -208,12 +208,47 @@ form{
     color: white;
 }
 section{
+    padding: 50px;
+    height: 400px;
     width: 100%;
-    background-color: #6A0DAD;
+    background-color: #8326c5;
+}
+section .lugar{
+    display: flex;
+    flex-direction: column;
+
 }
 section h2{
     font-size: xx-large;
     margin: 0 auto;
     color: white;
 }
+.local{
+    padding: 15px;
+    height: 220px;
+    margin: 20px;
+}
+.local a{
+    color: black;
+    text-decoration: none;
+}
+.local img{
+    height: 150px;
+    width: 230px;
+    border-radius: 100px 0 100px 0;
+}
+.lugares{
+    display: flex;
+}
+.lugar .btnSemFundo{
+    color: white;
+    border: solid 1px rgb(7, 7, 7);
+}
+.lugar .btnSemFundo:hover{
+    background-color: #ffffff;
+    color: #000;
+}
 
+footer{
+    background-color: #400768;
+}
