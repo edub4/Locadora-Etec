@@ -50,19 +50,19 @@ CREATE TABLE `telefone` (
     `codigo_cliente` int,
     `codigo_locadora` int
 );
- 
+
 ALTER TABLE `endereco` ADD CONSTRAINT `FK_endereco_2`
     FOREIGN KEY (`codigo_cliente`)
     REFERENCES `cliente` (`codigo_cliente`);
- 
+
 ALTER TABLE `endereco` ADD CONSTRAINT `FK_endereco_3`
     FOREIGN KEY (`codigo_locadora`)
     REFERENCES `locadora` (`codigo_locadora`);
- 
+
 ALTER TABLE `telefone` ADD CONSTRAINT `FK_telefone_2`
     FOREIGN KEY (`codigo_cliente`)
     REFERENCES `cliente` (`codigo_cliente`);
- 
+
 ALTER TABLE `telefone` ADD CONSTRAINT `FK_telefone_3`
     FOREIGN KEY (`codigo_locadora`)
     REFERENCES `locadora` (`codigo_locadora`);
