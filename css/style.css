@@ -35,7 +35,10 @@
 }
 .pages ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+.pages li{
+    margin-left: 30px;
 }
 .pages {
     width: 60%;
@@ -137,7 +140,6 @@ form{
 }
 .carros{
     margin: 100px auto;
-    width: 100%;
     flex-direction: column;
     height: 100%;
 }
@@ -197,6 +199,7 @@ form{
     transform: scale(1.05);
     box-shadow: 0px 0px 10px rgba(156, 156, 156, 0.466);
 }
+
 .btnSemFundo{
     background-color: transparent;
     margin-top: 20px;
@@ -208,9 +211,8 @@ form{
     color: white;
 }
 section{
-    padding: 50px;
+    padding: 50px 0 100px 0;
     height: 400px;
-    width: 100%;
     background-color: #8326c5;
 }
 section .lugar{
@@ -250,5 +252,18 @@ section h2{
 }
 
 footer{
+    color: white;
     background-color: #400768;
+}
+.agencia{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.agencia .btnVerde{
+    margin-top: 10px;
+    width: 150px;
+    height: 45px;
+}
+.agencia form{
+    margin-top: 30px;
 }

@@ -12,10 +12,8 @@
 <?php
 
 include "conn.php";
-$rm = $_GET['cpf'];
-echo "$cpf";
 
-$sql = "SELECT * FROM cliente WHERE $cpf = cpf";
+$sql = "SELECT codigo_cliente, nome_cliente, cpf_cliente, telefone_cliente, numero_cnh_cliente, senha_cliente FROM cliente";
 
 $result = $conn->query($sql);
 
@@ -38,17 +36,18 @@ if ($result && $result->num_rows > 0) {
     {
         echo "<tr>";
         echo "<td>{$row['codigo_cliente']}</td>";
-        echo "<td>{$row['nome']}</td>";
-        echo "<td>{$row['cpf']}</td>";
-        echo "<td>{$row['numero']}</td>";
-        echo "<td>{$row['cnh']}</td>";
-        echo "<td>{$row['senha']}</td>";
+        echo "<td>{$row['nome_cliente']}</td>";
+        echo "<td>{$row['cpf_cliente']}</td>";
+        echo "<td>{$row['telefone_cliente']}</td>";
+        echo "<td>{$row['numero_cnh_cliente']}</td>";
+        echo "<td>{$row['senha_cliente']}</td>";
         
     }
 
     echo "</table>";
 } else {
-    echo "<h1>Nenhum resultado encontrado</h1>";   
+    echo "<h1>Nenhum resultado encontrado</h1>";
+    header("Refresh: 3; url=../html/cadastrar.html");
 }
 
 $conn->close();
