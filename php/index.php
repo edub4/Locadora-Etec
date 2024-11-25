@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Lovetec</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,21 +14,20 @@
         <header>
             <div class="container header">
                 <div class="logo">
-                    <img src="img/lovetec/LogoNome.png" alt="logo" id="logo">
+                    <img src="../img/lovetec/LogoNome.png" alt="logo" id="logo">
                 </div>
                 <div class="pages">
                     <ul>
-                        <li><a href="./html/carros.html">CARROS</a></li>
-                        <li><a href="./html/agencias.html">AGÊNCIAS</a></li>
-                        <li><a href="./html/viagens.html">VIAGENS</a></li>
+                        <li><a href="/carros.php">CARROS</a></li>
+                        <li><a href="/agencias.php">AGÊNCIAS</a></li>
                     </ul>
                 </div>
                 <div class="log">
                     <div class="reserva">
-                        <a href="./html/logar.html"><img src="./img/icone/directions_car_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">MINHAS RESERVAS</a>
+                        <a href="../php/buscar.php"><img src="../img/icone/directions_car_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">MINHAS RESERVAS</a>
                     </div>
                     <div class="inOut">
-                        <img src="./img/icone/person_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        <img src="../img/icone/person_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                         <a href="./html/logar.html">LOGIN </a>
                         <p>|</p>
                         <a href="./html/cadastrar.html">CADASTRAR</a>
@@ -147,7 +146,7 @@
                     </a>
                 </div>
             </div>
-            <a href="./html/viagens.html"><button class="btnSemFundo">VEJA MAIS DICAS DE VIAGENS</button></a>
+            <button class="btnSemFundo">VEJA MAIS DICAS DE VIAGENS</button>
         </div>
     </section>
     <footer>

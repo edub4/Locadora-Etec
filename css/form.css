@@ -44,7 +44,3 @@ main H1{
 input:focus{
     background-color: rgb(219, 219, 219);
 }
-.voltar{
-    font-size: x-large;
-    margin-left: 50px;
-}

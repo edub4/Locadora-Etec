@@ -17,8 +17,23 @@
         </div>
     </header>
     <main>
-        <div class="container">
-            <form action="../php/login" method="post" enctype="multipart/form-data"></form>
+        <div class="container logar">
+            <form action="../php/login.php" method="post" enctype="multipart/form-data">
+                
+                <div class="formInput">
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" required maxlength="11" minlength="11">
+                </div>
+                
+                <div class="formInput">
+                    <label for="senha">senha</label>
+                    <input type="password" name="senha" id="senha" required maxlength="10">
+                </div>
+                
+                <button type="submit" class="btnVerde">
+                    ENTRAR
+                </button>
+            </form>
         </div>
     </main>
 </body>

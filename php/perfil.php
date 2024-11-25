@@ -27,7 +27,6 @@ if ($result && $result->num_rows > 0) {
     <th>NUMERO</th>
     <th>CNH</th>
     <th>SENHA</th>
-    <th colspan='2'>Ação</th>
     </tr>";
 
 

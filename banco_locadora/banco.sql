@@ -67,3 +67,17 @@ ALTER TABLE `telefone` ADD CONSTRAINT `FK_telefone_2`
 ALTER TABLE `telefone` ADD CONSTRAINT `FK_telefone_3`
     FOREIGN KEY (`codigo_locadora`)
     REFERENCES `locadora` (`codigo_locadora`);
+    
+INSERT INTO veiculo (nome_veiculo, placa_veiculo, valor_diaria_veiculo, ano_fabricacao_veiculo, cor_veiculo, modelo_veiculo)
+VALUES
+('Toyota Corolla Hybrid', 'ABC1D23', 226.50, '2022', 'Branco', 'Sedan'),
+('Honda Fit', 'XYZ4E56', 190.00, '2021', 'Prata', 'Sedan'),
+('Chevrolet Corsa', 'FRT7G89', 120.00, '2020', 'Vermelho', 'Hatchback'),
+('Mitsubishi L200 Triton', 'GHJ9K10', 250.00, '2023', 'Preto', 'Pickup');
+INSERT INTO locadora (nome_locadora, cnpj_locadora, endereco_locadora, telefone_locadora)
+VALUES
+('EtecAluga Fácil', '12345678000191', 'Rua das Palmeiras Verdes, 12650', '1198765-4321'),
+('EtecLocaRápido', '98765432000188', 'Avenida Central do Brasil, 456', '2191234-5678'),
+('EtecCarFlash', '11122233000177', 'Praça do Sol e Lua, 3344', '3999876-5432'),
+('NakamuraFastLoc', '44455566000155', 'Travessa das Flores Cheirosas, 8339', '1191234-0987'),
+('JardimAngelaTopCar Locadora', '33322211000199', 'Rua do Chimango, 2200', '9299123-4567');
