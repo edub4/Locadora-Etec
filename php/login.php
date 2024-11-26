@@ -13,16 +13,21 @@ $stmt->bind_param("ss", $cpf, $senha);
 $stmt->execute();
 $result = $stmt->get_result();
 
-if(mysqli_num_rows ($result) > 0 ){
-$_SESSION['cpf'] = $cpf;
-$_SESSION['senha'] = $senha;
-header('location:index.php');
-}
-else{
-    unset ($_SESSION['login']);
-    unset ($_SESSION['senha']);
-    echo ("alert('senha ou cpf errado')");
-    header("refresh:3; url=../html/logar.html");
-}
+if (mysqli_num_rows($result) > 0) {
+    $user = $result->fetch_assoc();
 
+    $_SESSION['nome_cliente'] = $user['nome_cliente'];
+    $_SESSION['cpf_cliente'] = $cpf;
+    $_SESSION['senha_cliente'] = $senha;
+
+    header('Location: index.php');
+    exit;
+} else {
+    
+    unset($_SESSION['cpf_cliente']);
+    unset($_SESSION['senha_cliente']);
+    echo"<script>alert('senha ou CPF incorreto')</script>";
+    header("refresh:0; url=../html/logar.html");
+    exit;
+}
 ?>

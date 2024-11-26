@@ -32,7 +32,7 @@ if ($result->num_rows > 0){
 } else {
     $conn->query(query: "INSERT INTO cliente (codigo_cliente, nome_cliente, data_nascimento_cliente, numero_cnh_cliente,  telefone_cliente, cpf_cliente,   senha_cliente) VALUES (NULL, '$nome', '$nascimento','$cnh', '$telefone', '$cpf',  '$senha')");
     echo"<h6> Dados Salvos com Sucesso</h6>";
-    header("refresh:3; url=./perfil.php");
+    header("refresh:3; url=./index.php");
 }
 $conn->close();
 

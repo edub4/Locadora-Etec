@@ -1,3 +1,11 @@
+<?php
+include 'conn.php';
+include 'validacao.php';
+
+verificarSessao();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,13 +32,11 @@
                 </div>
                 <div class="log">
                     <div class="reserva">
-                        <a href="../php/buscar.php"><img src="../img/icone/directions_car_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">MINHAS RESERVAS</a>
+                        <a href="./html/logar.html"><img src="../img/icone/directions_car_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">MINHAS RESERVAS</a>
                     </div>
-                    <div class="inOut">
+                    <div class="nomeCliente">
                         <img src="../img/icone/person_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                        <a href="./html/logar.html">LOGIN </a>
-                        <p>|</p>
-                        <a href="./html/cadastrar.html">CADASTRAR</a>
+                        <a href="./perfil.php">LOGIN - <?php  echo $_SESSION['nome_cliente']; ?></a>
                     </div>
                 </div>
             </div>
@@ -80,7 +86,7 @@
                     <h3>Grupo B- Com Ar</h3>
                 </div>
                 <div class="cardBody">
-                    <img src="./img/carros/carro1.jpeg" alt="carro1">
+                    <img src="../img/carros/carro1.jpeg" alt="carro1">
                     <button type="submit" class="btnRoxo">RESERVE AGORA</button>
                 </div>
                 
@@ -92,7 +98,7 @@
                     <h3>Grupo B- Com Ar</h3>
                 </div>
                 <div class="cardBody">
-                    <img src="./img/carros/carro1.jpeg" alt="carro1">
+                    <img src="../img/carros/carro1.jpeg" alt="carro1">
                     <button type="submit" class="btnRoxo">RESERVE AGORA</button>
                 </div>
             </div>
@@ -103,7 +109,7 @@
                     <h3>Grupo B- Com Ar</h3>
                 </div>
                 <div class="cardBody">
-                    <img src="./img/carros/carro1.jpeg" alt="carro1">
+                    <img src="../img/carros/carro1.jpeg" alt="carro1">
                     <button type="submit" class="btnRoxo">RESERVE AGORA</button>
                 </div>
             </div>
@@ -116,7 +122,7 @@
             <div class="lugares">
                 <div class="local">
                     <a href="">
-                        <img src="./img/locais/rioDeJaneiro.jpg" alt="distritoFederal">
+                        <img src="../img/locais/rioDeJaneiro.jpg" alt="distritoFederal">
                         <h3>Niteroi - RJ</h3>
                         <p>O que fazer em Niteroi, RJ</p>
                     </a>
@@ -124,7 +130,7 @@
                 
                 <div class="local">
                     <a href="">
-                        <img src="./img/locais/distritoFederal.jpg" alt="distritoFederal">
+                        <img src="../img/locais/distritoFederal.jpg" alt="distritoFederal">
                         <h3>Brasilia - DF</h3>
                         <p>O que fazer em Brasilia, DF</p>
                     </a>
@@ -132,7 +138,7 @@
                 
                 <div class="local">
                     <a href="">
-                        <img src="./img/locais/ouro-preto-mg.jpg" alt="distritoFederal">
+                        <img src="../img/locais/ouro-preto-mg.jpg" alt="distritoFederal">
                         <h3>Ouro Preto -MG</h3>
                         <p>O que fazer em Ouro Preto, MG</p>
                     </a>
@@ -140,7 +146,7 @@
                 
                 <div class="local">
                     <a href="">
-                        <img src="./img/locais/Paraiba.jpg" alt="distritoFederal">
+                        <img src="../img/locais/Paraiba.jpg" alt="distritoFederal">
                         <h3>Joao Pessoa - PB</h3>
                         <p>O que fazer em Brasilia, DF</p>
                     </a>

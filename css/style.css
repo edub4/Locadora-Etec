@@ -294,3 +294,10 @@ footer{
     margin-top: 40px;
     font-weight: 600;
 }
+.nomeCliente {
+    font-size:small;
+    display: flex;
+}
+.nomeCliente a{
+    margin-left: 25px;
+}

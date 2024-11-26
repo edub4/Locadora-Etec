@@ -1,3 +1,11 @@
+<?php
+include 'conn.php';
+include 'validacao.php';
+
+verificarSessao();
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,6 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cadastro Locadora</title>
 <link rel="stylesheet" type="text/css" href="../css/form.css">
+<link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body>
