@@ -29,7 +29,7 @@ verificarSessao();
                 <ul>
                     <li><a href="./carros.php">CARROS</a></li>
                     <li><a href="./agencias.php">AGÊNCIAS</a></li>
-                    <li><a href="./viagens.php">VIAGENS</a></li>
+                    <li><a href="./index.php">VIAGENS</a></li>
                 </ul>
             </div>
             <div class="log">
@@ -57,7 +57,7 @@ verificarSessao();
                 </div>
                 <div class="cardBody">
                     <img src="../img/carros/carro2.jpeg" alt="carro1">
-                    <a href="./logar.html"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
+                    <a href="./index.php"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
                 </div>
             </div>
             
@@ -68,7 +68,7 @@ verificarSessao();
                 </div>
                 <div class="cardBody">
                     <img src="../img/carros/carro2.jpeg" alt="carro1">
-                    <a href="./logar.html"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
+                    <a href="./index.php"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
                 </div>
             </div>
             
@@ -79,7 +79,7 @@ verificarSessao();
                 </div>
                 <div class="cardBody">
                     <img src="../img/carros/carro2.jpeg" alt="carro1">
-                    <a href="./logar.html"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
+                    <a href="./index.php"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
                 </div>
             </div>
             <div class="card">
@@ -89,7 +89,7 @@ verificarSessao();
                 </div>
                 <div class="cardBody">
                     <img src="../img/carros/carro1.jpeg" alt="carro1">
-                    <a href="./logar.html"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
+                    <a href="./index.php"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
                 </div>
             </div><div class="card">
                 <div class="cardHead">
@@ -98,7 +98,7 @@ verificarSessao();
                 </div>
                 <div class="cardBody">
                     <img src="../img/carros/carro1.jpeg" alt="carro1">
-                    <a href="./logar.html"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
+                    <a href="./index.php"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
                 </div>
             </div><div class="card">
                 <div class="cardHead">
@@ -107,7 +107,7 @@ verificarSessao();
                 </div>
                 <div class="cardBody">
                     <img src="../img/carros/carro1.jpeg" alt="carro1">
-                    <a href="./logar.html"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
+                    <a href="./index.php"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
                 </div>
             </div><div class="card">
                 <div class="cardHead">
@@ -116,7 +116,7 @@ verificarSessao();
                 </div>
                 <div class="cardBody">
                     <img src="../img/carros/carro3.jpeg" alt="carro1">
-                    <a href="./logar.html"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
+                    <a href="./index.php"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
                 </div>
             </div><div class="card">
                 <div class="cardHead">
@@ -125,7 +125,7 @@ verificarSessao();
                 </div>
                 <div class="cardBody">
                     <img src="../img/carros/carro3.jpeg" alt="carro1">
-                    <a href="./logar.html"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
+                    <a href="./index.php"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
                 </div>
             </div><div class="card">
                 <div class="cardHead">
@@ -134,7 +134,7 @@ verificarSessao();
                 </div>
                 <div class="cardBody">
                     <img src="../img/carros/carro3.jpeg" alt="carro1">
-                    <a href="./logar.html"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
+                    <a href="./index.php"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
                 </div>
             </div><div class="card">
                 <div class="cardHead">
@@ -143,7 +143,7 @@ verificarSessao();
                 </div>
                 <div class="cardBody">
                     <img src="../img/carros/carro4.jpeg" alt="carro1">
-                    <a href="./logar.html"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
+                    <a href="./index.php"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
                 </div>
             </div><div class="card">
                 <div class="cardHead">
@@ -152,7 +152,7 @@ verificarSessao();
                 </div>
                 <div class="cardBody">
                     <img src="../img/carros/carro4.jpeg" alt="carro1">
-                    <a href="./logar.html"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
+                    <a href="./index.php"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
                 </div>
             </div><div class="card">
                 <div class="cardHead">
@@ -161,7 +161,7 @@ verificarSessao();
                 </div>
                 <div class="cardBody">
                     <img src="../img/carros/carro4.jpeg" alt="carro1">
-                    <a href="./logar.html"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
+                    <a href="./index.php"><button type="submit" class="btnRoxo">RESERVE AGORA</button></a>
                 </div>
             </div>
         </div>

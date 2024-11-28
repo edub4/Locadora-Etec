@@ -28,7 +28,7 @@ verificarSessao();
                     <ul>
                         <li><a href="./carros.php">CARROS</a></li>
                         <li><a href="./agencias.php">AGÊNCIAS</a></li>
-                        <li><a href="./viagens.php">VIAGENS</a></li>
+                        <li><a href="./index.php">VIAGENS</a></li>
                     </ul>
                 </div>
                 <div class="log">
@@ -155,7 +155,7 @@ verificarSessao();
                     </a>
                 </div>
             </div>
-            <button class="btnSemFundo">VEJA MAIS DICAS DE VIAGENS</button>
+            <a href="#"><button class="btnSemFundo">VEJA MAIS DICAS DE VIAGENS</button></a>
         </div>
     </section>
     <footer>
