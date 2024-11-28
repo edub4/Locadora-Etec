@@ -26,12 +26,12 @@ $codigo_cliente = $_SESSION['codigo_cliente'];
         <div class="voltar">
         <a href="./index.php">Voltar</a>
         </div>
-</header>
+    </header>
 <?php
 
 include "conn.php";
 
-$sql = "SELECT codigo_cliente, nome_cliente, cpf_cliente, telefone_cliente, numero_cnh_cliente, senha_cliente FROM cliente where codigo_cliente = $codigo_cliente";
+$sql = "SELECT `codigo_locacao`, `data_inicial_locacao`, `data_final_locacao`,`valor_diaria_locacao`, `valor_final_locacao`from locacao where codigo_cliente = $codigo_cliente";
 
 $result = $conn->query($sql);
 
@@ -39,21 +39,20 @@ if ($result->num_rows > 0) {
     echo"
     <table>
         <tr>
-            <th>nome</th>
-            <th>cpf</th>
-            <th>telefone</th>
-            <th>numero_cnh</th>
-            <th>senha</th>
+            <th>data inicial</th>
+            <th>data final</th>
+            <th>valor da diaria</th>
+            <th>valor final</th>
 
         </tr>";
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
-        echo "<td> $row[nome_cliente] </td>";
-        echo "<td> $row[cpf_cliente] </td>";
-        echo "<td> $row[telefone_cliente] </td>";
-        echo "<td> $row[numero_cnh_cliente] </td>";
-        echo "<td> $row[senha_cliente] </td>";
+        echo "<td> $row[data_inicial_locacao] </td>";
+        echo "<td> $row[data_final_locacao] </td>";
+        echo "<td> $row[valor_diaria_locacao] </td>";
+        echo "<td> $row[valor_final_locacao] </td>";
         //echo "<td><a href='alterar.php'>Alterar</a></td>";
+        //echo "<td><a href='excluir.php?rm={$row['rm']}'>Excluir</a></td>";
         ;
     }
     echo "</table>";

@@ -16,6 +16,7 @@ $result = $stmt->get_result();
 if (mysqli_num_rows($result) > 0) {
     $user = $result->fetch_assoc();
 
+    $_SESSION['codigo_cliente'] = $user['codigo_cliente'];
     $_SESSION['nome_cliente'] = $user['nome_cliente'];
     $_SESSION['cpf_cliente'] = $cpf;
     $_SESSION['senha_cliente'] = $senha;

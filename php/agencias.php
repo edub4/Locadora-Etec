@@ -1,3 +1,11 @@
+
+<?php
+include 'conn.php';
+include 'validacao.php';
+
+verificarSessao();
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,26 +22,24 @@
     <header>
         <div class="container header">
             <div class="logo">
-                <a href="../index.html">
+                <a href="./index.php">
                     <img src="../img/lovetec/LogoNome.png" alt="logo" id="logo">
                 </a>
             </div>
             <div class="pages">
                 <ul>
-                    <li><a href="./carros.html">CARROS</a></li>
-                    <li><a href="./agencias.html">AGÊNCIAS</a></li>
-                    <li><a href="./viagens.html">VIAGENS</a></li>
+                    <li><a href="./carros.php">CARROS</a></li>
+                    <li><a href="./agencias.php">AGÊNCIAS</a></li>
+                    <li><a href="./viagens.php">VIAGENS</a></li>
                 </ul>
             </div>
             <div class="log">
                 <div class="reserva">
-                    <a href="../html/logar.html"><img src="../img/icone/directions_car_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">MINHAS RESERVAS</a>
+                    <a href="./reservas.php"><img src="../img/icone/directions_car_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">MINHAS RESERVAS</a>
                 </div>
-                <div class="inOut">
+                <div class="nomeCliente">
                     <img src="../img/icone/person_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                    <a href="./logar.html">LOGIN </a>
-                    <p>|</p>
-                    <a href="cadastrar.html">CADASTRAR</a>
+                    <a href="./perfil.php"><?php  echo $_SESSION['nome_cliente']; ?></a>
                 </div>
             </div>
         </div>
@@ -42,10 +48,10 @@
         <div class="container agencia">
             <h1>Buscar Agências Cadastradas</h1>
         
-            <form action="../php/select3.php" method="post" enctype="multipart/form-data">
+            <form action="../php/select3Validado.php" method="post" enctype="multipart/form-data">
                 
                 <div class="formInput">
-                    <input type="text" name="nomeagencia" id="nomeAgencia" >
+                    <input type="text" name="localRetirada" id="localRetirada" >
                     <div class="labelLinha">Nome Agencia</div>
                     <img src="./img/icone/local.svg" alt="">
                 </div>

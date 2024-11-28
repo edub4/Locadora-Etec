@@ -26,23 +26,24 @@ verificarSessao();
                 </div>
                 <div class="pages">
                     <ul>
-                        <li><a href="/carros.php">CARROS</a></li>
-                        <li><a href="/agencias.php">AGÊNCIAS</a></li>
+                        <li><a href="./carros.php">CARROS</a></li>
+                        <li><a href="./agencias.php">AGÊNCIAS</a></li>
+                        <li><a href="./viagens.php">VIAGENS</a></li>
                     </ul>
                 </div>
                 <div class="log">
                     <div class="reserva">
-                        <a href="./html/logar.html"><img src="../img/icone/directions_car_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">MINHAS RESERVAS</a>
+                        <a href="./reservas.php"><img src="../img/icone/directions_car_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">MINHAS RESERVAS</a>
                     </div>
                     <div class="nomeCliente">
                         <img src="../img/icone/person_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                        <a href="./perfil.php">LOGIN - <?php  echo $_SESSION['nome_cliente']; ?></a>
+                        <a href="./perfil.php"><?php  echo $_SESSION['nome_cliente']; ?></a>
                     </div>
                 </div>
             </div>
         </header>
             <div class="container alinhar">
-                <form action="#">
+                <form action="./locacao.php" method="post" enctype="multipart/form-data">
                     <div class="formInput">
                         <input type="text" name="localRetirada" id="localRetirada" >
                         <div class="labelLinha">Digite o local de retirada</div>
@@ -69,8 +70,10 @@ verificarSessao();
                         <input type="time" name="horaDevolucao" id="horaDevolucao" >
                         <div class="labelLinha">Hora da devolução</div>
                     </div>
+                <button type="submit" class="btnVerde">
+                    CONTINUAR
+                </button>
                 </form>
-                <button type="submit" class="btnVerde">CONTINUAR</button>
             </div>
     </div>
     <main class="container carros">

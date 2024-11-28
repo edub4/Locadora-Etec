@@ -24,7 +24,9 @@ CREATE TABLE `locacao` (
     `data_inicial_locacao` date not null,
     `data_final_locacao` date not null,
     `valor_diaria_locacao` DOUBLE (6,2) not null,
-    `valor_final_locacao` DOUBLE (8,2) not null
+    `valor_final_locacao` DOUBLE (8,2) not null,
+    `codigo_cliente` INT NOT NULL,
+    `codigo_veiculo` INT NOT NULL
 );
 
 CREATE TABLE `veiculo` (
@@ -67,6 +69,10 @@ ALTER TABLE `telefone` ADD CONSTRAINT `FK_telefone_2`
 ALTER TABLE `telefone` ADD CONSTRAINT `FK_telefone_3`
     FOREIGN KEY (`codigo_locadora`)
     REFERENCES `locadora` (`codigo_locadora`);
+ALTER TABLE `locacao` 
+ADD CONSTRAINT `FK_locacao_cliente` FOREIGN KEY (`codigo_cliente`) REFERENCES `cliente`(`codigo_cliente`),
+ADD CONSTRAINT `FK_locacao_veiculo` FOREIGN KEY (`codigo_veiculo`) REFERENCES `veiculo`(`codigo_veiculo`);
+
     
 INSERT INTO veiculo (nome_veiculo, placa_veiculo, valor_diaria_veiculo, ano_fabricacao_veiculo, cor_veiculo, modelo_veiculo)
 VALUES
