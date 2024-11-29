@@ -44,6 +44,7 @@ if ($result->num_rows > 0) {
             <th>telefone</th>
             <th>numero_cnh</th>
             <th>senha</th>
+            <th>conta</th>
 
         </tr>";
     while ($row = $result->fetch_assoc()) {
@@ -53,7 +54,7 @@ if ($result->num_rows > 0) {
         echo "<td> $row[telefone_cliente] </td>";
         echo "<td> $row[numero_cnh_cliente] </td>";
         echo "<td> $row[senha_cliente] </td>";
-        //echo "<td><a href='alterar.php'>Alterar</a></td>";
+        echo "<td><a href='desloga.php'>Desloga</a></td>";
         ;
     }
     echo "</table>";

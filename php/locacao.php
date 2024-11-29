@@ -68,7 +68,7 @@ $result = $conn->query($sql);
                             <?php
                                 if ($result->num_rows > 0) {
                                     while ($row = $result->fetch_assoc()) {
-                                        echo "<option value='" . htmlspecialchars($row['codigo_veiculo']) . "'>" . htmlspecialchars($row['nome_veiculo']) . "</option>";
+                                        echo "<option value='" . htmlspecialchars($row['codigo_veiculo'] ) . "'>" . htmlspecialchars($row['nome_veiculo']) . "</option>";
                                     }
                                 }
                                 else {
